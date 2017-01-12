@@ -11,11 +11,13 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script>
     $(document).ready(function() {
-      $.get('https://ipinfo.io', function(data){
-        $.getJSON("https://api.apixu.com/v1/current.json?key=c88b615011b243ebabf162239171201&q="+data.city,function(json){
-          $(".weather").html(JSON.stringify(json));
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          $.getJSON("https://api.apixu.com/v1/current.json?key=c88b615011b243ebabf162239171201&q="+position.coords.latitude+","+position.coords.longitude,function(json){
+            $(".weather").html(JSON.stringify(json));
+          });
         });
-      }, "jsonp");
+      }
     });
   </script>
 </body>
