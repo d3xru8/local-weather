@@ -11,7 +11,7 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script>
     $(document).ready(function() {
-      $.getJSON('http://ipinfo.io', function(data){
+      $.getJSON('http://ipinfo.io/json?callback=?', function(data){
         $.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+data.city+"&appid=b6357316b0b402edf1450b4cf1f6efdc",function(json){
           $(".weather").html(JSON.stringify(json));
         });
