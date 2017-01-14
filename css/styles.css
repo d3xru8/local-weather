@@ -24,6 +24,7 @@ body {
   font-size: 1.5em;
 }
 .weather {
+  align-items: baseline;
   display: flex;
   flex-flow: row nowrap;
 }
