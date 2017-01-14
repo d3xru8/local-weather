@@ -1,13 +1,48 @@
 body {
+  color: white;
   font-family: 'Quicksand', sans-serif;
+  text-align: center;
 }
 .container {
+  align-items: center;
+  background-color: blue;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px gray;
   display: flex;
   flex-flow: column nowrap;
   height: 300px;
-  width: 300px;
+  justify-content: space-around;
+  margin: 75px auto 0 auto;
+  width: 360px;
+}
+.name {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.country {
+  font-size: 1.5em;
 }
 .weather {
-  display: flex; 
+  display: flex;
   flex-flow: row nowrap;
+}
+.condition {
+  font-size: 2em;
+}
+.temp-box {
+  align-items: baseline;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 10px;
+}
+.temp-unit {
+  background-color: blue;
+  border: 0;
+  color: white;
+  display: none;
+  font-size: 4em;
+}
+.temp {
+  font-size: 4em;
 }
