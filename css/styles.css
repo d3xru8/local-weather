@@ -2,6 +2,7 @@ body {
   color: white;
   font-family: 'Quicksand', sans-serif;
   text-align: center;
+  text-shadow: 2px 2px gray;
 }
 .container {
   align-items: center;
@@ -43,6 +44,18 @@ body {
   color: white;
   display: none;
   font-size: 4em;
+  position: relative;
+  text-shadow: 2px 2px gray;
+}
+.temp-unit:hover{
+  color: yellow;
+  text-shadow: 3px 3px gray;
+  top: -1px;
+}
+.temp-unit:active {
+  color: lightgray;
+  text-shadow: 1px 1px gray;
+  top: 1px;
 }
 .temp {
   font-size: 4em;
