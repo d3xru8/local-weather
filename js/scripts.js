@@ -10,7 +10,7 @@ $(document).ready(function() {
         $(".time").html(json.location.localtime);
         $(".icon").attr("src",json.current.condition.icon);
         $(".condition").html(json.current.condition.text);
-        $(".temp").html(temp_c);
+        $(".temp").html(temp_c + "&deg;");
       });
     });
   }
