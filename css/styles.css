@@ -1,0 +1,13 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 300px;
+  width: 300px;
+}
+.weather {
+  display: flex; 
+  flex-flow: row nowrap;
+}
